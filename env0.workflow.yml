@@ -1,0 +1,9 @@
+environments:
+  vpc:
+    name: 'VPC and Network'
+    templateName: 'vpc'
+  db:
+    name: instances
+    templateName: 'instances'
+    needs:
+      - vpc
