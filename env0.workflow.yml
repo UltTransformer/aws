@@ -2,7 +2,7 @@ environments:
   vpc:
     name: 'VPC and Network'
     templateName: 'vpc'
-  db:
+  instances:
     name: instances
     templateName: 'instances'
     needs:
