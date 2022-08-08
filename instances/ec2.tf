@@ -53,24 +53,24 @@ resource "aws_instance" "CN_EC2_1" {
 }
 
 # Instance 2
-resource "aws_network_interface" "CN_EC2_2" {
-  # subnet_id   = aws_subnet.CN_Subnet_2.id
-  private_ips = ["10.0.2.102"]
-  subnet_id   = "subnet-08d057327d010cebdinst"
-}
+# resource "aws_network_interface" "CN_EC2_2" {
+#   # subnet_id   = aws_subnet.CN_Subnet_2.id
+#   private_ips = ["10.0.2.102"]
+#   subnet_id   = "subnet-08d057327d010cebd"
+# }
 
-resource "aws_instance" "CN_EC2_2" {
-  ami                  = data.aws_ami.amazon_linux.id
-  instance_type        = "t3.micro"
-  availability_zone    = "eu-north-1b"
-  # iam_instance_profile = "cn_iam_role"
+# resource "aws_instance" "CN_EC2_2" {
+#   ami                  = data.aws_ami.amazon_linux.id
+#   instance_type        = "t3.micro"
+#   availability_zone    = "eu-north-1b"
+#   # iam_instance_profile = "cn_iam_role"
 
-  network_interface {
-    network_interface_id = aws_network_interface.CN_EC2_2.id
-    device_index         = 0
-  }
+#   network_interface {
+#     network_interface_id = aws_network_interface.CN_EC2_2.id
+#     device_index         = 0
+#   }
 
-  tags = {
-    Name = "CN_EC2_2"
-  }
-}
+#   tags = {
+#     Name = "CN_EC2_2"
+#   }
+# }
