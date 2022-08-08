@@ -31,9 +31,9 @@ data "aws_ami" "amazon_linux" {
 
 # Instance 1
 resource "aws_network_interface" "CN_EC2_1" {
-  subnet_id   = aws_subnet.CN_Subnet_1.id
+  # subnet_id   = aws_subnet.CN_Subnet_1.id
   private_ips = ["10.0.1.101"]
-  # subnet_id   = "subnet-0f453cad6e710870b"
+  subnet_id   = "subnet-085822d7f5cd40682"
 }
 
 resource "aws_instance" "CN_EC2_1" {
