@@ -16,7 +16,3 @@ variable "CN_Subnet_Public" {
   type    = string
   default = "10.0.101.0/24"
 }
-variable "CN_AWS_Region" {
-  type    = string
-  default = "ChangeMe"
-}
