@@ -18,4 +18,5 @@ variable "CN_Subnet_Public" {
 }
 variable "ENV0_TERRAFORM_BACKEND_CONFIG" {
   type    = string
+  default = "key=demo.tfstate"
 }
