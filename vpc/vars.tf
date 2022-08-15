@@ -16,3 +16,7 @@ variable "CN_Subnet_Public" {
   type    = string
   default = "10.0.101.0/24"
 }
+variable "CN_Region" {
+  type    = string
+  default = "eu-north-1"
+}
