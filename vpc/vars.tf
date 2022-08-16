@@ -20,3 +20,11 @@ variable "CN_Region" {
   type    = string
   default = "eu-north-1"
 }
+variable "CN_Sub_Region_1" {
+  type    = string
+  default = "eu-north-1a"
+}
+variable "CN_Sub_Region_2" {
+  type    = string
+  default = "eu-north-1b"
+}
