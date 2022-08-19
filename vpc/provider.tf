@@ -7,6 +7,6 @@ terraform {
   }
 }
 
-# provider "aws" {
-#   region = var.CN_Region
-# }
+provider "aws" {
+  region = var.CN_Region
+}
