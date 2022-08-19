@@ -48,7 +48,7 @@ resource "aws_instance" "CN_EC2_1" {
   }
 
   tags = {
-    Name = var.CN_EC2_Tag
+    Name = var.CN_EC2_Name
   }
 }
 
