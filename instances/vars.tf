@@ -5,7 +5,7 @@ variable "CN_EC2_Instance_Size" {
   default = "t3.micro"
 }
 
-variable "CN_EC2_Tag" {
+variable "CN_EC2_Name" {
   type    = string
-  default = "Tag"
+  default = "CHANGEME"
 }
