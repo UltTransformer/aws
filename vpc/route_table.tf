@@ -12,6 +12,7 @@ resource "aws_route_table" "CN_Route_Table_Public" {
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.CN_IGW.id
   }
+}
 
 resource "aws_route_table_association" "CN_Route_Table_Private_Association_CN_Subnet_1" {
   subnet_id      = aws_subnet.CN_Subnet_1.id
