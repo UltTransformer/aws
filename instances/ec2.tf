@@ -33,12 +33,12 @@ data "aws_ami" "amazon_linux" {
 resource "aws_network_interface" "CN_EC2_1" {
   # subnet_id   = aws_subnet.CN_Subnet_1.id
   private_ips = ["10.0.1.101"]
-  subnet_id   = "subnet-085822d7f5cd40682"
+  subnet_id   = "subnet-07e861b50d6bea0ff"
 }
 
 resource "aws_instance" "CN_EC2_1" {
   ami                  = data.aws_ami.amazon_linux.id
-  instance_type        = "t3.micro"
+  instance_type        = var.CN_EC2_Instance_Size
   availability_zone    = "eu-north-1a"
   # iam_instance_profile = "cn_iam_role"
 
