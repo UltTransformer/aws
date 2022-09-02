@@ -1,5 +1,5 @@
 resource "aws_security_group" "CN_Security_Group" {
-  name        = "CN_SG"
+  name        = "CN_SecurityGroup"
   description = "Allow any any"
   vpc_id      = aws_vpc.CN_VPC_1.id
 
