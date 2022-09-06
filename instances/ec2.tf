@@ -33,7 +33,7 @@ data "aws_ami" "amazon_linux" {
 resource "aws_network_interface" "CN_EC2_1" {
   # private_ip = "10.0.1.101"
   # subnet_id = "subnet-0356a23104586dcd0"
-  subnet_id   = "${data.terraform_remote_state.vpc.outputs.CN_Subnet_1_ID.value}"
+  subnet_id   = data.terraform_remote_state.vpc.outputs.CN_Subnet_1_ID[0]
 }
 
 resource "aws_instance" "CN_EC2_1" {
