@@ -1,7 +1,23 @@
+# Remote backend configuration
 terraform {
   backend "s3" {
     bucket = "cn-env0-statefile-bucket"
     key    = "instance.tfstate"
     region = "eu-north-1"
   }
+}
+
+# Pulling output from VPC remote backend
+data "terraform_remote_state" "vpc" {
+  backend = "remote"
+  config = {
+    organization = "aws"
+    workspaces = {
+      name = "env0c94f7d"
+    }
+  }
+}
+
+resource "aws_instance" "CN_Subnet_1_ID	" {
+  subnet_id = data.terraform_remote_state.vpc.outputs.CN_Subnet_1_ID
 }
