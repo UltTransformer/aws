@@ -34,7 +34,7 @@ resource "aws_network_interface" "CN_EC2_1" {
   # subnet_id   = aws_subnet.CN_Subnet_1.id
   # private_ip = "10.0.1.101"
   subnet_id = "subnet-0356a23104586dcd0"
-  # subnet_id   = output.subnet_id
+  # subnet_id   = data.terraform_remote_state.vpc.outputs.CN_Subnet_1_ID.value
 }
 
 resource "aws_instance" "CN_EC2_1" {
