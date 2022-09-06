@@ -17,7 +17,7 @@ data "terraform_remote_state" "vpc" {
   }
 }
 
-resource "aws_subnet" "CN_Subnet_1_ID" {
-  subnet_id = data.terraform_remote_state.vpc.outputs.CN_Subnet_1_ID
-  vpc_id = data.terraform_remote_state.vpc.outputs.CN_VPC_1_ID	
-}
+# resource "aws_subnet" "CN_Subnet_1_ID" {
+#   subnet_id = data.terraform_remote_state.vpc.outputs.CN_Subnet_1_ID
+#   vpc_id = data.terraform_remote_state.vpc.outputs.CN_VPC_1_ID	
+# }
