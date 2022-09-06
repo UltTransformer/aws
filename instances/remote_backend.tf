@@ -9,12 +9,11 @@ terraform {
 
 # Pulling output from VPC remote backend
 data "terraform_remote_state" "vpc" {
-  backend = "remote"
+  backend = "s3"
   config = {
-    organization = "aws"
-    workspaces = {
-      name = "env0c94f7d"
-    }
+    bucket = "cn-env0-statefile-bucket"
+    key    = "vpc.tfstate"
+    region = "eu-north-1"
   }
 }
 
