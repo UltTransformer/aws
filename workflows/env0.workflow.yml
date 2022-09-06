@@ -1,9 +1,9 @@
 environments:
   vpc:
-    name: 'VPC and Network'
+    name: 'aws-vpc'
     templateName: 'aws-vpc'
   instances:
-    name: 'Instances'
+    name: 'aws-ec2'
     templateName: 'aws-ec2'
     needs:
       - aws-vpc
