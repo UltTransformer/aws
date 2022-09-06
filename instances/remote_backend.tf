@@ -18,6 +18,6 @@ data "terraform_remote_state" "vpc" {
   }
 }
 
-resource "aws_instance" "CN_Subnet_1_ID	" {
+resource "aws_instance" "CN_Subnet_1_ID" {
   subnet_id = data.terraform_remote_state.vpc.outputs.CN_Subnet_1_ID
 }
