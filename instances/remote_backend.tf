@@ -14,6 +14,13 @@ data "aws_subnet" "CN_Subnet_1" {
   }
 }
 
+data "aws_vpc" "CN_VPC_1" {
+  filter {
+    name   = "tag:Name"
+    values = ["CN_Subnet_1"]
+  }
+}
+
 # Pulling output from VPC remote backend
 # data "terraform_remote_state" "vpc" {
 #   backend = "s3"
