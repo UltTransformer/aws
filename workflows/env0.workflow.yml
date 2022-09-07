@@ -6,4 +6,4 @@ environments:
     name: Instances
     templateName: 'aws-ec2'
     needs:
-      - VPC
+      - vpc
