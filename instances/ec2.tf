@@ -34,7 +34,7 @@ resource "aws_network_interface" "CN_EC2_1" {
   # private_ip = "10.0.1.101"
   # subnet_id = "subnet-0356a23104586dcd0"
   subnet_id   = data.aws_subnet.CN_Subnet_1.id
-  vpc_security_group_ids = "sgr-06e52b44cf3723d01"
+  # vpc_security_group_ids = "sgr-06e52b44cf3723d01"
 }
 
 resource "aws_instance" "CN_EC2_1" {
