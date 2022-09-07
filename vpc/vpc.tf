@@ -3,7 +3,6 @@ resource "aws_vpc" "CN_VPC_1" {
   cidr_block           = var.CN_VPC_1_CIDR
   enable_dns_hostnames = true
   tags = {
-    Environment = "name:environment"
   }
 }
 
