@@ -17,7 +17,7 @@ data "aws_subnet" "CN_Subnet_1" {
 data "aws_vpc" "CN_VPC_1" {
   filter {
     name   = "tag:Name"
-    values = ["CN_Subnet_1"]
+    values = ["CN_VPC_1"]
   }
 }
 
