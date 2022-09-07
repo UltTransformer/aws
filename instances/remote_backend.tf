@@ -7,6 +7,13 @@ terraform {
   }
 }
 
+data "aws_subnet" "CN_Subnet_1" {
+  filter {
+    name   = "tag:Name"
+    values = ["CN_Subnet_1"]
+  }
+}
+
 # Pulling output from VPC remote backend
 # data "terraform_remote_state" "vpc" {
 #   backend = "s3"
@@ -15,9 +22,4 @@ terraform {
 #     key    = "env:/aws-vpc/vpc.tfstate"
 #     region = "eu-north-1"
 #   }
-# }
-
-# resource "aws_subnet" "CN_Subnet_1_ID" {
-#   subnet_id = data.terraform_remote_state.vpc.outputs.CN_Subnet_1_ID
-#   vpc_id = data.terraform_remote_state.vpc.outputs.CN_VPC_1_ID	
 # }
