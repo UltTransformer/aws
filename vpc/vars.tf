@@ -28,7 +28,3 @@ variable "CN_Sub_Region_2" {
   type    = string
   default = "eu-north-1b"
 }
-variable "environment" {
-  type    = string
-  default = "default"
-}
