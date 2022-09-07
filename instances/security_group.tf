@@ -1,7 +1,7 @@
 resource "aws_security_group" "CN_Security_Group" {
   name        = "CN_SecurityGroup"
   description = "Allow any any"
-  vpc_id      = data.aws_vpc.CN_VPC_1
+  vpc_id      = data.aws_vpc.CN_VPC_1.id 
 
   ingress {
     from_port   = 0
