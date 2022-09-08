@@ -7,13 +7,13 @@ resource "aws_security_group" "CN_Security_Group" {
     from_port   = 0
     to_port     = 22
     protocol    = "TCP"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["10.0.0.0/16"]
   }
 
   egress {
     from_port   = 0
     to_port     = 22
-    protocol    = "-1"
+    protocol    = "TCP"
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
