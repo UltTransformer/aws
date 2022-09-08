@@ -31,10 +31,7 @@ data "aws_ami" "amazon_linux" {
 
 # Instance 1
 resource "aws_network_interface" "CN_EC2_1" {
-  # private_ip = "10.0.1.101"
-  # subnet_id = "subnet-0356a23104586dcd0"
-  subnet_id       = data.aws_subnet.CN_Subnet_1.id
-  # security_groups = [sg-040bd4eb8e9282c56]
+  subnet_id = data.aws_subnet.CN_Subnet_1.id
 }
 
 resource "aws_instance" "CN_EC2_1" {
@@ -46,8 +43,13 @@ resource "aws_instance" "CN_EC2_1" {
     network_interface_id = aws_network_interface.CN_EC2_1.id
     device_index         = 0
   }
-
   tags = {
     Name = var.CN_EC2_Name
   }
+}
+
+resource "aws_network_interface" "CN_EC2_1" {
+  security_groups = [
+    "sg-040bd4eb8e9282c56",
+  ]
 }
