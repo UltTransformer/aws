@@ -32,6 +32,9 @@ data "aws_ami" "amazon_linux" {
 # Instance 1
 resource "aws_network_interface" "CN_EC2_1" {
   subnet_id = data.aws_subnet.CN_Subnet_1.id
+    security_groups = [
+    "sg-040bd4eb8e9282c56",
+  ]
 }
 
 resource "aws_instance" "CN_EC2_1" {
@@ -46,10 +49,4 @@ resource "aws_instance" "CN_EC2_1" {
   tags = {
     Name = var.CN_EC2_Name
   }
-}
-
-resource "aws_network_interface" "CN_EC2_1" {
-  security_groups = [
-    "sg-040bd4eb8e9282c56",
-  ]
 }
