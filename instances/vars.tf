@@ -7,5 +7,5 @@ variable "CN_EC2_Instance_Size" {
 
 variable "CN_EC2_Name" {
   type    = string
-  default = "CN_EC2_1"
+  default = "CHANGEME"
 }
