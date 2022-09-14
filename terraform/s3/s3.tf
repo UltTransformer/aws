@@ -8,4 +8,5 @@ module "aws_s3_bucket" {
 variable "bucket_name_local" {
   description = "name of the s3 bucket. Must be unique."
   type        = string
+  default     = "cn-env0-statefile-bucket"
 }
