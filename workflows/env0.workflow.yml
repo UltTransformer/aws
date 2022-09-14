@@ -1,9 +1,0 @@
-environments:
-  vpc:
-    name: VPC
-    templateName: 'aws-vpc'
-  instances:
-    name: Instances
-    templateName: 'aws-ec2'
-    needs:
-      - vpc

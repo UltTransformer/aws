@@ -1,4 +1,5 @@
 # Image(s)
+
 data "aws_ami" "ubuntu" {
   most_recent = true
 
@@ -27,26 +28,4 @@ data "aws_ami" "amazon_linux" {
     values = ["hvm"]
   }
   owners = ["amazon"] # Canonical
-}
-
-# Instance 1
-resource "aws_network_interface" "CN_EC2_1" {
-  subnet_id = data.aws_subnet.CN_Subnet_1.id
-    security_groups = [
-    "sg-040bd4eb8e9282c56",
-  ]
-}
-
-resource "aws_instance" "CN_EC2_1" {
-  ami               = data.aws_ami.amazon_linux.id
-  instance_type     = var.CN_EC2_Instance_Size
-  availability_zone = "eu-north-1a"
-
-  network_interface {
-    network_interface_id = aws_network_interface.CN_EC2_1.id
-    device_index         = 0
-  }
-  tags = {
-    Name = var.CN_EC2_Name
-  }
 }
