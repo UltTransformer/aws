@@ -12,9 +12,9 @@ variable "subnet_2" {
 variable "subnet_public" {
   type = string
 }
-# variable "region" {
-#   type = string
-# }
+variable "region" {
+  type = string
+}
 variable "sub_region_1" {
   type = string
 }
