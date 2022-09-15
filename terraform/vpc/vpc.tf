@@ -3,7 +3,6 @@
 module "aws_s3_bucket" {
   # source      = "../../modules/s3-bucket"
   source        = "git::https://github.com/UltTransformer/aws.git//modules/vpc"
-  bucket_name   = var.bucket-name-local
   vpc_1_cidr    = var.vpc_1_cidr_local
   subnet_1      = var.subnet_1_local
   subnet_2      = var.subnet_2_local
