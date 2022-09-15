@@ -1,6 +1,6 @@
 resource "aws_security_group" "security_group" {
-  name        = var.security-group-name
-  vpc_id      = data.aws_vpc.vpc_1.id
+  name   = var.security-group-name
+  vpc_id = data.aws_vpc.vpc_1.id
 
   ingress {
     from_port   = 0

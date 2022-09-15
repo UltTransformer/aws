@@ -26,9 +26,9 @@ variable "egress_sg_cidr" {
 }
 
 variable "security-group-name" {
-  type    = string
+  type = string
 }
 
 variable "ec2-instance-name" {
-  type    = string
+  type = string
 }

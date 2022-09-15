@@ -2,7 +2,7 @@
 
 resource "aws_network_interface" "ec2_1" {
   subnet_id = data.aws_subnet.subnet_1.id
-    security_groups = [
+  security_groups = [
     aws_security_group.security_group.id,
   ]
 }
