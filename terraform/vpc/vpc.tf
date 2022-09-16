@@ -1,7 +1,7 @@
 # Calling vpc modules
 
-module "aws_s3_bucket" {
-  # source      = "../../modules/s3-bucket"
+module "aws_vpc" {
+  # source      = "../../modules/vpc"
   source        = "git::https://github.com/UltTransformer/aws.git//modules/vpc"
   vpc_1_cidr    = var.vpc_1_cidr_local
   subnet_1      = var.subnet_1_local

@@ -1,4 +1,5 @@
 # Remote backend configuration
+
 terraform {
   backend "s3" {
     bucket = "cn-env0-statefile-bucket"
@@ -8,6 +9,7 @@ terraform {
 }
 
 # Pulling output from VPC remote backend
+
 # data "terraform_remote_state" "vpc" {
 #   backend = "s3"
 #   config = {
