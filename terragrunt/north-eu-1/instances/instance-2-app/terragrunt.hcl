@@ -17,6 +17,6 @@ inputs = {
   security-group-name = "ec2-2-app-sg"
 }
 
-dependency "vpc" {
-  config_path = "../../vpc"
-}
+// dependency "vpc" {
+//   config_path = "../../vpc"
+// }
