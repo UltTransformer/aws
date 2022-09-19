@@ -13,7 +13,7 @@ include {
 # Inputs for module.
 
 inputs = {
-  ec2-instance-name = "ec2-2-app"
+  ec2-instance-name = "ec2-2-application"
   security-group-name = "ec2-2-app-sg"
 }
 
