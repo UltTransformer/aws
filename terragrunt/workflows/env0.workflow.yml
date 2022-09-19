@@ -3,7 +3,12 @@ environments:
     name: vpc
     templateName: 'tg-aws-vpc'
   instances:
-    name: instance
+    name: instances
     templateName: 'tg-aws-instances'
+    needs:
+      - vpc
+  jumphost:
+    name: jumphost
+    templateName: 'tg-aws-jumphost'
     needs:
       - vpc
