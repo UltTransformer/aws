@@ -1,9 +1,9 @@
 environments:
   vpc:
     name: vpc
-    templateName: 'tf-aws-vpc'
+    templateName: 'tg-aws-vpc'
   instances:
     name: instance
-    templateName: 'tf-aws-ec2'
+    templateName: 'tg-aws-instances'
     needs:
       - vpc
