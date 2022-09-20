@@ -19,10 +19,10 @@ resource "aws_route_table_association" "route_table_private_association_subnet_1
   route_table_id = aws_route_table.route_table_private.id
 }
 
-# resource "aws_route_table_association" "route_table_private_association_subnet_2" {
-#   subnet_id      = aws_subnet.subnet_2.id
-#   route_table_id = aws_route_table.route_table_private.id
-# }
+resource "aws_route_table_association" "route_table_private_association_subnet_2" {
+  subnet_id      = aws_subnet.subnet_2.id
+  route_table_id = aws_route_table.route_table_private.id
+}
 
 resource "aws_route_table_association" "route_table_public_association_subnet_public" {
   subnet_id      = aws_subnet.subnet_public.id
