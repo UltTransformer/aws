@@ -11,3 +11,9 @@ variable "bucket-name-local" {
   type        = string
   default     = "cn-env0-statefile-bucket"
 }
+
+variable "random-local" {
+  description = "name of the s3 bucket. Must be unique."
+  type        = string
+  default     = "94198619481654"
+}
