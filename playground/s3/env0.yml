@@ -16,6 +16,9 @@ deploy:
         - cp /tmp/cn/terraform /opt/tfenv/bin/terraform
         - ls -lh /opt/tfenv/bin/
         - /opt/tfenv/bin/terraform --version
+    terraformPlan:
+      after:
+        - nslookup www.env0.com
     terraformOutput:
       after:
         - /opt/tfenv/bin/terraform --version
