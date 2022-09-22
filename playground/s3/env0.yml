@@ -19,5 +19,6 @@ deploy:
 
 deploy:
   steps:
-    after:
-      - /opt/tfenv/bin/terraform --version
+    terraformOutput:
+      after:
+        - /opt/tfenv/bin/terraform --version
