@@ -16,9 +16,6 @@ deploy:
         - cp /tmp/cn/terraform /opt/tfenv/bin/terraform
         - ls -lh /opt/tfenv/bin/
         - /opt/tfenv/bin/terraform --version
-
-deploy:
-  steps:
     terraformOutput:
       after:
         - /opt/tfenv/bin/terraform --version
