@@ -18,7 +18,7 @@ deploy:
         - /opt/tfenv/bin/terraform --version
     terraformPlan:
       after:
-        - nslookup www.env0.com
+        - nslookup www.64891981981616435481.com
     terraformOutput:
       after:
         - /opt/tfenv/bin/terraform --version
