@@ -44,7 +44,7 @@ resource "aws_subnet" "subnet_2" {
 #     Name = "subnet_public_1"
 #   }
 # }
-resource "aws_subnet" "subnet_public_2" {
+resource "aws_subnet" "subnet_public" {
   vpc_id                  = aws_vpc.vpc_1.id
   cidr_block              = var.subnet_public_2
   availability_zone       = var.sub_region_2
