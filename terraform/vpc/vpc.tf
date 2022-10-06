@@ -13,9 +13,7 @@ module "aws_vpc" {
   region          = var.region_local
   sub_region_1    = var.sub_region_1_local
   sub_region_2    = var.sub_region_2_local
-
-
-
+  sub_region_3    = var.sub_region_3_local
 }
 
 # Vatiable definitions 
