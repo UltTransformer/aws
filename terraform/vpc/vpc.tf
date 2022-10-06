@@ -4,16 +4,16 @@ module "aws_vpc" {
   # source        = "../../modules/vpc"
   source          = "git::https://github.com/UltTransformer/aws.git//modules/vpc"
   vpc_1_cidr      = var.vpc_1_cidr_local
-  subnet        = var.subnet_1_local
-  subnet_2        = var.subnet_2_local
-  subnet_3        = var.subnet_3_local  
+  subnet_1        = var.subnet_1_local
+  # subnet_2        = var.subnet_2_local
+  # subnet_3        = var.subnet_3_local  
   subnet_public = var.subnet_public_local_1
-  subnet_public_2 = var.subnet_public_local_2
-  subnet_public_3 = var.subnet_public_local_3
+  # subnet_public_2 = var.subnet_public_local_2
+  # subnet_public_3 = var.subnet_public_local_3
   region          = var.region_local
   sub_region    = var.sub_region_1_local
-  sub_region_2    = var.sub_region_2_local
-  sub_region_3    = var.sub_region_3_local
+  # sub_region_2    = var.sub_region_2_local
+  # sub_region_3    = var.sub_region_3_local
 }
 
 # Vatiable definitions 
