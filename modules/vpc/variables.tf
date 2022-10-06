@@ -9,7 +9,16 @@ variable "subnet_1" {
 variable "subnet_2" {
   type = string
 }
+variable "subnet_3" {
+  type = string
+}
 variable "subnet_public_1" {
+  type = string
+}
+variable "subnet_public_2" {
+  type = string
+}
+variable "subnet_public_3" {
   type = string
 }
 variable "region" {
