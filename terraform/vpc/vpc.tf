@@ -58,7 +58,7 @@ variable "sub_region_2_local" {
   type    = string
   default = "eu-north-1b"
 }
-variable "sub_region_2_local" {
+variable "sub_region_3_local" {
   type    = string
   default = "eu-north-1c"
 }
