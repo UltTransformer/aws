@@ -21,3 +21,6 @@ variable "sub_region_1" {
 variable "sub_region_2" {
   type = string
 }
+variable "sub_region_3" {
+  type = string
+}
