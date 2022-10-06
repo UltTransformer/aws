@@ -44,13 +44,13 @@ resource "aws_subnet" "subnet_public_1" {
     Name = "subnet_public_1"
   }
 }
-resource "aws_subnet" "subnet_public_1" {
+resource "aws_subnet" "subnet_public_2" {
   vpc_id                  = aws_vpc.vpc_1.id
-  cidr_block              = var.subnet_public_1
-  availability_zone       = var.sub_region_1
+  cidr_block              = var.subnet_public_2
+  availability_zone       = var.sub_region_2
   map_public_ip_on_launch = true
   tags = {
-    Name = "subnet_public_1"
+    Name = "subnet_public_2"
   }
 }
 resource "aws_subnet" "subnet_public_3" {
