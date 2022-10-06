@@ -7,7 +7,7 @@ module "aws_vpc" {
   subnet_1        = var.subnet_1_local
   subnet_2        = var.subnet_2_local
   # subnet_3        = var.subnet_3_local  
-  subnet_public = var.subnet_public_local_1
+  subnet_public = var.subnet_public_local
   # subnet_public_2 = var.subnet_public_local_2
   # subnet_public_3 = var.subnet_public_local_3
   region          = var.region_local
