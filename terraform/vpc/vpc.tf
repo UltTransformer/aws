@@ -7,7 +7,7 @@ module "aws_vpc" {
   subnet_1        = var.subnet_1_local
   subnet_2        = var.subnet_2_local
   # subnet_3        = var.subnet_3_local  
-  subnet_public = var.subnet_public_local
+  subnet_public_1 = var.subnet_public_local_1
   # subnet_public_2 = var.subnet_public_local_2
   # subnet_public_3 = var.subnet_public_local_3
   region          = var.region_local
@@ -34,14 +34,14 @@ variable "subnet_2_local" {
 #   type    = string
 #   default = "10.0.3.0/24"
 # }
-# variable "subnet_public_local_1" {
-#   type    = string
-#   default = "10.0.101.0/24"
-# }
-variable "subnet_public_local" {
+variable "subnet_public_local_1" {
   type    = string
-  default = "10.0.102.0/24"
+  default = "10.0.101.0/24"
 }
+# variable "subnet_public_local_2" {
+#   type    = string
+#   default = "10.0.102.0/24"
+# }
 # variable "subnet_public_local_3" {
 #   type    = string
 #   default = "10.0.103.0/24"
