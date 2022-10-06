@@ -26,7 +26,7 @@ resource "aws_subnet" "subnet_2" {
     Name = "subnet_2"
   }
 }
-resource "aws_subnet" "subnet_2" {
+resource "aws_subnet" "subnet_3" {
   vpc_id                  = aws_vpc.vpc_1.id
   cidr_block              = var.subnet_3
   availability_zone       = var.sub_region_3
@@ -35,7 +35,7 @@ resource "aws_subnet" "subnet_2" {
     Name = "subnet_3"
   }
 }
-resource "aws_subnet" "subnet_public" {
+resource "aws_subnet" "subnet_public_1" {
   vpc_id                  = aws_vpc.vpc_1.id
   cidr_block              = var.subnet_public_1
   availability_zone       = var.sub_region_1
@@ -44,7 +44,7 @@ resource "aws_subnet" "subnet_public" {
     Name = "subnet_public"
   }
 }
-resource "aws_subnet" "subnet_public" {
+resource "aws_subnet" "subnet_public_2" {
   vpc_id                  = aws_vpc.vpc_1.id
   cidr_block              = var.subnet_public_2
   availability_zone       = var.sub_region_2
@@ -53,7 +53,7 @@ resource "aws_subnet" "subnet_public" {
     Name = "subnet_public"
   }
 }
-resource "aws_subnet" "subnet_public" {
+resource "aws_subnet" "subnet_public_3" {
   vpc_id                  = aws_vpc.vpc_1.id
   cidr_block              = var.subnet_public_3
   availability_zone       = var.sub_region_3
