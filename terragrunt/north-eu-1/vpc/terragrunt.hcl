@@ -17,8 +17,11 @@ inputs = {
   subnet_1 = "10.0.1.0/24"
   subnet_2 = "10.0.2.0/24"
   subnet_3 = "10.0.2.0/24"
-  subnet_public = "10.0.102.0/24"
+  subnet_public_1 = "10.0.101.0/24"
+  subnet_public_2 = "10.0.102.0/24"
+  subnet_public_3 = "10.0.103.0/24"
   region = "eu-north-1"
   sub_region_1 = "eu-north-1a"
   sub_region_2 = "eu-north-1b"
+  sub_region_3 = "eu-north-1c"
 }
