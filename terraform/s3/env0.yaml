@@ -4,10 +4,7 @@ deploy:
   steps:
     terraformInit:
       before:
-        - # echo env0 native variable
         - echo $ENV0_ENVIRONMENT_ID
-        - # echo a variable defined in the UI
         - echo $KEY1
-        - # create new tf-var and echo the var
         - export TF_VAR_KEY2=VALUE2
         - echo $KEY2
