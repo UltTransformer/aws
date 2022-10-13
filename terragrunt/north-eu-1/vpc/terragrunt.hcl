@@ -16,6 +16,7 @@ inputs = {
   vpc_1_cidr = "10.0.0.0/16"
   subnet_1 = "10.0.1.0/24"
   subnet_2 = "10.0.2.0/24"
+  subnet_3 = "10.0.2.0/24"
   subnet_public = "10.0.102.0/24"
   region = "eu-north-1"
   sub_region_1 = "eu-north-1a"
