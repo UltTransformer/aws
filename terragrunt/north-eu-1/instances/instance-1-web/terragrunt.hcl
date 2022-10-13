@@ -17,6 +17,7 @@ inputs = {
   security-group-name = "ec2-1-web-sg"
 }
 
-// dependency "vpc" {
-//   config_path = "../../vpc"
-// }
+variable "ec2-instance-name-input" {
+  type = string
+  default = "ec2-1-web"
+}
