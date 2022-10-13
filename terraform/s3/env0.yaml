@@ -6,5 +6,6 @@ deploy:
       before:
         - echo $ENV0_ENVIRONMENT_ID
         - echo $KEY1
-        - export TF_VAR_KEY1=VALUE2
-        - echo $KEY1
+        - echo "KEY2=value2" >> $ENV0_ENV
+        - echo "KEY3=value3" >> $ENV0_ENV
+        - cat /home/node/.env0-env-vars
