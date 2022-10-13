@@ -6,5 +6,5 @@ deploy:
       before:
         - echo $ENV0_ENVIRONMENT_ID
         - echo $KEY1
-        - export TF_VAR_KEY2=VALUE2
-        - echo $KEY2
+        - export TF_VAR_KEY1=VALUE2
+        - echo $KEY1
