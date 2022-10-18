@@ -1,3 +1,5 @@
+# Define provider
+
 terraform {
   required_providers {
     aws = {
@@ -5,6 +7,8 @@ terraform {
     }
   }
 }
+
+# Define region
 
 provider "aws" {
   region = "eu-north-1"
