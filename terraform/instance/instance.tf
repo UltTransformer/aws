@@ -15,5 +15,5 @@ variable "ec2-instance-name-local" {
 variable "security-group-name-local" {
   description = "name of the s3 bucket. Must be unique."
   type        = string
-  default     = "ec2-1-sg"
+  default     = "ec2-1-security-group"
 }
