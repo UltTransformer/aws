@@ -4,17 +4,17 @@ deploy:
   steps:
     terraformInit:
       before:
-        - mkdir /tmp/cn
-        - cd /tmp/cn
-        - wget https://releases.hashicorp.com/terraform/1.2.9/terraform_1.2.9_linux_386.zip -P /tmp/cn/
-        - ls -lh /tmp/cn/
-        - unzip -d /tmp/cn/ /tmp/cn/terraform_1.2.9_linux_386.zip
-        - rm /tmp/cn/terraform_1.2.9_linux_386.zip
-        - chmod 755 /tmp/cn/terraform
-        - ls -lh /tmp/cn/
-        - mv /opt/tfenv/bin/terraform /opt/tfenv/bin/old_binary
-        - cp /tmp/cn/terraform /opt/tfenv/bin/terraform
-        - ls -lh /opt/tfenv/bin/
+        # - mkdir /tmp/cn
+        # - cd /tmp/cn
+        # - wget https://releases.hashicorp.com/terraform/1.2.9/terraform_1.2.9_linux_386.zip -P /tmp/cn/
+        # - ls -lh /tmp/cn/
+        # - unzip -d /tmp/cn/ /tmp/cn/terraform_1.2.9_linux_386.zip
+        # - rm /tmp/cn/terraform_1.2.9_linux_386.zip
+        # - chmod 755 /tmp/cn/terraform
+        # - ls -lh /tmp/cn/
+        # - mv /opt/tfenv/bin/terraform /opt/tfenv/bin/old_binary
+        # - cp /tmp/cn/terraform /opt/tfenv/bin/terraform
+        # - ls -lh /opt/tfenv/bin/
         - /opt/tfenv/bin/terraform --version
     # terraformPlan:
     #   after:
