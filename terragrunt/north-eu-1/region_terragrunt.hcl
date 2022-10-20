@@ -15,7 +15,7 @@ terraform {
 EOF
 }
 
-# Comment out when working locally.
+# Comment out when working locally. TEST COMMENT
 
 generate "aws_provider" {
   path      = "aws_provider.tf"
