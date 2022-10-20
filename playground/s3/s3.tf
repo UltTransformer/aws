@@ -18,21 +18,22 @@
 
 # Pull in variables
 
-# locals { 
-# 	config_values = yamldecode(file("../config.yaml"))
-#   bucket_name_local = local.config_values["bucket_name"]
-# }
+locals { 
+	config_values = yamldecode(file("../config.yaml"))
+  bucket_name_local = local.config_values["bucket_name"]
+}
 
 # Variable definition
 
 variable "bucket_name" {
  type = string
+ default = "change-me"
 }
 
 # Create s3 bucket
 
 resource "aws_s3_bucket" "s3_bucket" {
-  bucket = var.bucket_name
+  bucket = local.bucket_name_local
 }
 
 resource "aws_s3_bucket_acl" "s3_bucket" {
