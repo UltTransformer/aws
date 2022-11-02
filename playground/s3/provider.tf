@@ -16,10 +16,10 @@ provider "aws" {
 
 # Remote backend configuration
 
-terraform {
-  backend "s3" {
-    bucket = "cn-env0-statefile-bucket"
-    key    = "s3-playground.tfstate"
-    region = "eu-north-1"
-  }
-}
+# terraform {
+#   backend "s3" {
+#     bucket = "cn-env0-statefile-bucket"
+#     key    = "s3-playground.tfstate"
+#     region = "eu-north-1"
+#   }
+# }
