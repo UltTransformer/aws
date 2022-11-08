@@ -6,9 +6,9 @@ terraform {
 
 # Gathers configuration from parent terragrunt files.
 
-// include {
-//   path = find_in_parent_folders("UPDATE")
-// }
+include {
+  path = find_in_parent_folders("provider.hcl")
+}
 
 # Inputs for module.
 
