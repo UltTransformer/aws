@@ -15,6 +15,7 @@ data "aws_subnet" "subnet_2" {
 }
 
 data "aws_vpc" "vpc_1" {
+  default = ["fake vpc id"]
   filter {
     name   = "tag:Name"
     values = ["vpc_1"]
