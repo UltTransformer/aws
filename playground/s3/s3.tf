@@ -18,16 +18,16 @@
 
 # Pull in variables
 
-locals { 
-	config_values = yamldecode(file("../config.yaml"))
+locals {
+  config_values     = yamldecode(file("../config.yaml"))
   bucket_name_local = local.config_values["bucket_name"]
 }
 
 # Variable definition
 
 variable "bucket_name" {
- type = string
- default = "change-me"
+  type    = string
+  default = "change-me"
 }
 
 # Create s3 bucket
