@@ -15,7 +15,7 @@ data "aws_subnet" "subnet_2" {
 }
 
 data "aws_vpc" "vpc_1" {
-  default = "vpc-f4k31d"
+  default = ["vpc-f4k31d"]
   filter {
     name   = "tag:Name"
     values = ["vpc_1"]
