@@ -24,4 +24,5 @@ dependency "vpc" {
   // mock_outputs = {
   //   vpc_id = "vpc-f4k3id"
   // }
+  skip_outputs = true
 }
