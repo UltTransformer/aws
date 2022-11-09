@@ -1,7 +1,7 @@
 # Uses public module.
 
 terraform {
-  source = "git::https://github.com/UltTransformer/aws.git//modules/instance"
+  source = "git::https://github.com/UltTransformer/aws.git//modules/terragrunt/instance"
 }
 
 # Gathers configuration from parent terragrunt files.

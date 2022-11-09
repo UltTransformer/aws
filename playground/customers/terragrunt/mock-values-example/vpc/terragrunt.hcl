@@ -1,7 +1,7 @@
 # Uses public module.
 
 terraform {
-  source = "git::https://github.com/UltTransformer/aws.git//modules/vpc"
+  source = "git::https://github.com/UltTransformer/aws.git//modules/terragrunt/vpc"
 }
 
 # Gathers configuration from parent terragrunt files.
