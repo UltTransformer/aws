@@ -1,6 +1,6 @@
 resource "aws_security_group" "security_group" {
   name   = var.security-group-name
-  vpc_id = aws_vpc.vpc_1.id
+  vpc_id = "vpc-f4k3id"
 
   ingress {
     from_port   = 0
