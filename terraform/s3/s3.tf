@@ -2,7 +2,7 @@
 
 module "aws_s3_bucket" {
   # source      = "../../modules/s3-bucket"
-  source      = "git::https://github.com/UltTransformer/aws.git//modules/s3-bucket"
+  source      = "git::https://github.com/UltTransformer/aws.git//modules/terraform/s3-bucket"
   bucket_name = var.bucket-name-local
 }
 
