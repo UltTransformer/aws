@@ -5,3 +5,7 @@ dependency "vpc" {
     vpc_id = "vpc-f4k3id"
   }
 }
+
+inputs = {
+  vpc_id = dependency.vpc.outputs.vpc_id
+}
