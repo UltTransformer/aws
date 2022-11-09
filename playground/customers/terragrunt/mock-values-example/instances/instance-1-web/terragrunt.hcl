@@ -15,4 +15,13 @@ include {
 inputs = {
   ec2-instance-name = "ec2-1-web"
   security-group-name = "ec2-1-web-sg"
+  vpc_id = dependency.vpc.outputs.vpc_id
+}
+
+dependency "vpc" {
+  config_path = "../../vpc"
+  mock_outputs_allowed_terraform_commands = ["validate","plan"]
+  mock_outputs = {
+    vpc_id = "vpc-f4k3id"
+  }
 }
