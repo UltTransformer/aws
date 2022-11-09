@@ -1,7 +1,7 @@
 # Calling s3-bucket module
 
 module "instance" {
-  source              = "../../modules/instance"
+  source              = "git::https://github.com/UltTransformer/aws.git//modules/terraform/instance"
   ec2-instance-name   = var.ec2-instance-name-local
   security-group-name = var.security-group-name-local
 }
