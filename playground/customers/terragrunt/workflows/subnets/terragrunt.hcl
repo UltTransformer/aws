@@ -1,7 +1,7 @@
 # Uses public module.
 
 terraform {
-  source = "git::"
+  source = "git::https://github.com/UltTransformer/aws.git//playground/customers/terragrunt/workflows/subnets"
 }
 
 # Gathers configuration from parent terragrunt files.
