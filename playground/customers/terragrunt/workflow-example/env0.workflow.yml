@@ -2,8 +2,8 @@ environments:
   vpc:
     name: 'customer-example-vpc'
     templateName: 'customer-example-vpc'
-  instances:
-    name: customer-example-instances
-    templateName: 'customer-example-instances'
+  subnets:
+    name: customer-example-subnets
+    templateName: 'customer-example-subnets'
     needs:
       - vpc
