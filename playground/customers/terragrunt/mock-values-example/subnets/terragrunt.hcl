@@ -18,6 +18,6 @@ dependency "vpc" {
   // mock_outputs_allowed_terraform_commands = ["plan"]
 }
 
-// inputs = {
-//   vpc_id = dependency.vpc.outputs.vpc_id
-// }
+inputs = {
+  vpc_id = "vpc-87654321"
+}
