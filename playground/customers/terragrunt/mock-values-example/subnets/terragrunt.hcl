@@ -1,7 +1,7 @@
 # Uses public module.
 
 terraform {
-  source = "../modules/subnets"
+  source = "git::https://github.com/UltTransformer/aws.git//playground/customers/terragrunt/mock-values-example/modules/subnets"
 }
 
 # Gathers configuration from parent terragrunt files.

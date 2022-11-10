@@ -1,7 +1,7 @@
 # Uses public module.
 
 terraform {
-  source = "../modules/vpc"
+  source = "git::https://github.com/UltTransformer/aws.git//playground/customers/terragrunt/mock-values-example/modules/vpc"
 }
 
 # Gathers configuration from parent terragrunt files.
