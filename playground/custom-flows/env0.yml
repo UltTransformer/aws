@@ -8,4 +8,4 @@ deploy:
         - pwd
         - ls
         - cd aws
-        - ls
+        - ls aws/
