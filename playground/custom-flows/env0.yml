@@ -4,6 +4,6 @@ deploy:
   steps:
     terraformInit:
       before:
-        - git clone git@github.com:UltTransformer/aws.git
+        - git clone https://github.com/UltTransformer/aws.git
         - pwd
         - ls
