@@ -4,6 +4,6 @@ deploy:
   steps:
     terraformInit:
       before:
-        - git clone git@github.com:UltTransformer/env0-module-s3.git
+        - git clone git@github.com:UltTransformer/aws.git
         - pwd
         - ls
