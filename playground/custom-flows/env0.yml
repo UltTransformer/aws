@@ -1,0 +1,9 @@
+version: 1
+
+deploy:
+  steps:
+    terraformInit:
+      before:
+        - git clone git@github.com:UltTransformer/env0-module-s3.git
+        - pwd
+        - ls
