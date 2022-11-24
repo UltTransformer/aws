@@ -5,20 +5,9 @@ variable "bucket_name" {
   default = "change-me"
 }
 
-# Create s3 bucket
+# Call module
 
-resource "aws_s3_bucket" "s3_bucket" {
-  bucket = local.bucket_name_local
-}
-
-resource "aws_s3_bucket_acl" "s3_bucket" {
-  bucket = aws_s3_bucket.s3_bucket.id
-  acl    = "private"
-}
-
-resource "aws_s3_bucket_versioning" "s3_bucket" {
-  bucket = aws_s3_bucket.s3_bucket.id
-  versioning_configuration {
-    status = "Enabled"
-  }
+module "test-module" {
+  source = "api.env0.com/a25b6a59-9c48-4917-b082-68e985319a87/test-module/testmodule"
+  version = "0.0.1"
 }
