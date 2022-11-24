@@ -1,6 +1,24 @@
-# Call env0 module
+# Variable definition
 
-module "env0-modules-s3" {
-  source = "api.env0.com/a25b6a59-9c48-4917-b082-68e985319a87/env0-modules-s3/env0moduless3"
-  version = "1.0.0"
+variable "bucket_name" {
+  type    = string
+  default = "change-me"
+}
+
+# Create s3 bucket
+
+resource "aws_s3_bucket" "s3_bucket" {
+  bucket = local.bucket_name_local
+}
+
+resource "aws_s3_bucket_acl" "s3_bucket" {
+  bucket = aws_s3_bucket.s3_bucket.id
+  acl    = "private"
+}
+
+resource "aws_s3_bucket_versioning" "s3_bucket" {
+  bucket = aws_s3_bucket.s3_bucket.id
+  versioning_configuration {
+    status = "Enabled"
+  }
 }
