@@ -7,7 +7,6 @@ variable "bucket_name" {
 
 # Call module
 
-module "test-module" {
-  source = "api.env0.com/a25b6a59-9c48-4917-b082-68e985319a87/test-module/testmodule"
-  version = "0.0.1"
+module "aws_s3_bucket" {
+  source      = "../../../test-modules"
 }
