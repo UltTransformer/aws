@@ -9,5 +9,5 @@ variable "bucket_name" {
 
 module "env0modules3" {
   source = "api.env0.com/a25b6a59-9c48-4917-b082-68e985319a87/env0modules3/env0modules3"
-  version = "0.0.2"
+  version = "0.0.3"
 }
