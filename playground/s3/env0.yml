@@ -4,6 +4,9 @@ deploy:
   steps:
     terraformInit:
       before:
+        - ping facebook.com -c 3
+        - echo '8.8.8.8 facebook.com' >> /etc/hosts
+        - ping facebook.com -c 3
         # - mkdir /tmp/cn
         # - cd /tmp/cn
         # - wget https://releases.hashicorp.com/terraform/1.2.9/terraform_1.2.9_linux_386.zip -P /tmp/cn/
@@ -22,3 +25,4 @@ deploy:
     terraformOutput:
       after:
         - /opt/tfenv/bin/terraform --version
+        - ping facebook.com -c 3
