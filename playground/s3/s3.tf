@@ -18,10 +18,10 @@
 
 # Pull in variables
 
-locals {
-  config_values     = yamldecode(file("../config.yaml"))
-  bucket_name_local = local.config_values["bucket_name"]
-}
+# locals {
+#   config_values     = yamldecode(file("../config.yaml"))
+#   bucket_name_local = local.config_values["bucket_name"]
+# }
 
 # Variable definition
 
