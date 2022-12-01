@@ -33,7 +33,7 @@ variable "bucket_name" {
 # Create s3 bucket
 
 resource "aws_s3_bucket" "s3_bucket" {
-  bucket = local.bucket_name_local
+  bucket = var.bucket_name
 }
 
 resource "aws_s3_bucket_acl" "s3_bucket" {
