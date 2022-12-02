@@ -34,12 +34,17 @@ variable "bucket_name" {
   # }
 }
 
+variable "region_name" {
+  type    = string
+}
+
 # Create s3 bucket
 
 resource "aws_s3_bucket" "s3_bucket" {
   bucket = var.bucket_name
   tags = {
     Name = "s3-${terraform.workspace}"
+    Region = var.region_name
   }
 }
 
