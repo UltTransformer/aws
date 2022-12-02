@@ -27,7 +27,7 @@
 
 variable "bucket_name" {
   type    = string
-  default = "change-me"
+  default = terraform.workspace
   # validation {
   #   condition     = length(var.bucket_name) == 9
   #   error_message = "Must be a 9 character long API token."
