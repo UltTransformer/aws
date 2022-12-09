@@ -17,3 +17,5 @@ variable "security-group-name-local" {
   type        = string
   default     = "ec2-1-sg"
 }
+
+  # customer 1 demo 9th Dec 2022 12:00
