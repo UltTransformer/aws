@@ -18,4 +18,4 @@ variable "security-group-name-local" {
   default     = "ec2-1-sg"
 }
 
-  # customer 1 demo 19th Dec 2022
+  # customer 1 demo 19th Dec 2022 #2
